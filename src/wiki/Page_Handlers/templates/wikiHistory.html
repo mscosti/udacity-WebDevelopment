@@ -1,0 +1,13 @@
+{% extends "wikiBase.html" %}
+
+{% block content %}
+	<TABLE>
+	{% for version in history %}
+	  	<TR>
+      	<TD>{{version.edited}}</TD>
+      	<TD>{{version.content[:100]|e}}</TD>
+      	<TD><a href="/wiki{{title}}?V={{loop.revindex}}">view</a>
+   		</TR>
+	{% endfor %}
+	</TABLE>
+{% endblock %}

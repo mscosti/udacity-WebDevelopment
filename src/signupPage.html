@@ -1,0 +1,27 @@
+<form method="post">
+	<label>
+		Username:
+		<input type="text" name="username" value=%(username)s>
+	</label>
+	<div style="color: red">%(uError)s</div>
+	<br>
+	<label>
+		Password:
+		<input type="text" name="password" value=%(password)s>
+	</label>
+	<div style="color: red">%(pError)s</div>
+	<br>
+	<label>
+		Verify Password:
+		<input type="text" name="verify" value=%(verify)s>
+	</label>
+	<div style="color: red">%(vError)s</div>
+	<br>
+	<label>
+		Email(optional):
+		<input type="text" name="email" value=%(email)s>
+	</label>
+	<div style="color: red">%(eError)s</div>
+	
+	<input type="submit">
+</form>

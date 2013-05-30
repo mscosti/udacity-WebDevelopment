@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/css/asciiChanStyle.css">
+</head>
+	<body>
+	    <h1><a href="/blog">Blogs Yay</a></h1>
+	    <hr>
+	    {% for BlogPost in posts %}
+	    <div class="post">
+	        <div class="post-title"><a href="/blog/{{BlogPost.key().id()}}">{{BlogPost.title}}</a>,{{BlogPost.created}}</div>
+        	<pre class="post-body">{{BlogPost.content}}</pre>
+	    </div>
+	    {% endfor %}
+	    <h2>Queried {{elapsed}} seconds ago</h2>
+	</body>
+</html>

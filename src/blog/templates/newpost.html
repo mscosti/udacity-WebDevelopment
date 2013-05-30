@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/css/asciiChanStyle.css">
+</head>
+	<body>
+	    <h1>New Blog Post</h1>
+	    <form method="post">
+	        <label>
+	            <div>Title</div> <input type="text" name="subject" value={{title}}>
+	        </label>
+	        <label>
+	            <div>Body</div>
+	            <textarea name="content">{{content}}</textarea>
+	        </label>
+	        <div class="error">{{error}}</div>
+	        <input type="submit">
+	    </form>
+	</body>
+</html>

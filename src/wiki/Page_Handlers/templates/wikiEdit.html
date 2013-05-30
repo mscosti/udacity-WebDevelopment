@@ -1,0 +1,12 @@
+{% extends "wikiBase.html" %}
+
+{% block content %}
+
+  		<form method="post">
+		  	<div class="edit_box">
+		  		<textarea name="content" style="width=500px;height=700px">{{content}}</textarea>
+		  		<br>
+		  		<input type="submit">
+		 	 </div>
+		</form>
+{% endblock %}
